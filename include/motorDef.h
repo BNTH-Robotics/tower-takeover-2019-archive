@@ -5,7 +5,6 @@ vex::motor LeftMotor = vex::motor(vex::PORT1, false);
 vex::motor RightMotor = vex::motor(vex::PORT2, true);      
 vex::motor RightClaw = vex::motor(vex::PORT5, false);
 vex::motor LeftClaw = vex::motor(vex::PORT6, true);
-vex::controller Controller1 = vex::controller();
 vex::motor Ramp = vex::motor(vex::PORT9, true);
 vex::motor pusher = vex::motor(vex::PORT3,false);
 vex::motor pusher2 = vex::motor(vex::PORT10,true);

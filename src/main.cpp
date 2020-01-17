@@ -20,6 +20,7 @@
  * amount of times. 
  * Basically, the previous state of main.cpp is what will be
  */
+#include "controllerDef.h"
 #include "motorDef.h"
 // ---- END VEXCODE CONFIGURED DEVICES ----
 #include "vex.h"
