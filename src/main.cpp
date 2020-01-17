@@ -22,6 +22,7 @@
 #include "vex.h"
 #include "speedDef.h"
 #include "autonomous.h"
+#include "pre_auton.h"
 #include "usercontrol.h"
 
 
@@ -50,12 +51,7 @@ using namespace vex;
 // 
 
 vex::competition Competition;
-void pre_auton( void ) 
-{
-    //   // All activities that occur before the competition starts
-    //   // Example: clearing encoders, setting servo positions, ...
-    //     
-}   
+   
 //vex::pneumatics pusher    = vex::  ( vex::PORT4);
 int main(){
     // Initializing Robot Configuration. DO NOT REMOVE!
