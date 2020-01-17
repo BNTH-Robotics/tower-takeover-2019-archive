@@ -53,22 +53,8 @@ void pre_auton( void )
     //   // Example: clearing encoders, setting servo positions, ...
     //     
 }   
-// 
-
-// 
-
-
-// 
 //vex::pneumatics pusher    = vex::  ( vex::PORT4);
-// 
-// 
 int main(){
-
-
-
-
-
-
     // Initializing Robot Configuration. DO NOT REMOVE!
     vexcodeInit();
 
