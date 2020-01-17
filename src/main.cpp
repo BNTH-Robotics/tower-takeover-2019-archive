@@ -14,6 +14,9 @@
 // inside of this project's folder.
 
 // ---- START VEXCODE CONFIGURED DEVICES ----
+/* Note, #include will basically copy and paste the contents
+ * of the file(literally) during compile time
+ */
 #include "motorDef.h"
 // ---- END VEXCODE CONFIGURED DEVICES ----
 #include "vex.h"
