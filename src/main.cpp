@@ -16,6 +16,9 @@
 // ---- START VEXCODE CONFIGURED DEVICES ----
 /* Note, #include will basically copy and paste the contents
  * of the file(literally) during compile time
+ * Header guards prevent code from being added a duplicate
+ * amount of times. 
+ * Basically, the previous state of main.cpp is what will be
  */
 #include "motorDef.h"
 // ---- END VEXCODE CONFIGURED DEVICES ----
@@ -24,8 +27,6 @@
 #include "autonomous.h"
 #include "pre_auton.h"
 #include "usercontrol.h"
-
-
 // /*----------------------------------------------------------------------------*/
 // /*                                                                            */
 // /*    Module:       main.cpp                                                  */
