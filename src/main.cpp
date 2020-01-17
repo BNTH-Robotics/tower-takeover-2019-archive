@@ -44,27 +44,24 @@
 // // Motor Port 10   RightMotor    V5 Smart Motor    Right side motor    true
 // // Motor Port 8    ArmMotor      V5 Smart Motor    Arm motor           false
 // // Motor Port 3    ClawMotor     V5 Smart Motor    Claw motor          false
-// //
 #include "vex.h"
 
 using namespace vex;
 // vex::pneumatics piston = vex::pneumatics(Brain.ThreeWirePort.A);
-// 
-
 vex::competition Competition;
-   
 //vex::pneumatics pusher    = vex::  ( vex::PORT4);
+
 int main(){
     // Initializing Robot Configuration. DO NOT REMOVE!
     vexcodeInit();
 
     Competition.autonomous( autonomous );
     Competition.drivercontrol( usercontrol );
-    //     
-    //     //Run the pre-autonomous function. 
+
+    //Run the pre-autonomous function. 
     pre_auton();
-    //        
-    //     //Prevent main from exiting with an infinite loop.                        
+    
+    //Prevent main from exiting with an infinite loop.                        
     while(1) 
     {
         vex::task::sleep(100);//Sleep the task for a short amount of time to prevent wasted resources.
