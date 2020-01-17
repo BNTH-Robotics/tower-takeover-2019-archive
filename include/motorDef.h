@@ -1,7 +1,6 @@
 #ifndef TOWER_TAKEOVER_MOTOR_DEFINITIONS_H
 #define TOWER_TAKEOVER_MOTOR_DEFINITIONS_H
 #include "vex.h"
-
 vex::motor LeftMotor     = vex::motor(vex::PORT1, false);
 vex::motor RightMotor  = vex::motor(vex::PORT2, true);      
 vex::motor RightClaw        = vex::motor(vex::PORT5, false);

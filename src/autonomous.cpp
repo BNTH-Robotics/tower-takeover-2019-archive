@@ -1,4 +1,5 @@
 #include "vex.h"
+#include "motorDef.h"
 #include "autonomous.h"
 void autonomous(void) 
 {
