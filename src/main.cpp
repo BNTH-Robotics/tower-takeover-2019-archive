@@ -47,7 +47,6 @@
 // // Motor Port 3    ClawMotor     V5 Smart Motor    Claw motor          false
 #include "vex.h"
 
-using namespace vex;
 // vex::pneumatics piston = vex::pneumatics(Brain.ThreeWirePort.A);
 vex::competition Competition;
 //vex::pneumatics pusher    = vex::  ( vex::PORT4);
