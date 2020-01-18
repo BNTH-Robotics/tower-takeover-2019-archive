@@ -2,11 +2,11 @@
 #define TOWER_TAKEOVER_ROBOT_CONTROL_CHECK_EXEC_H
 namespace control
 {
-    inline void joystickPosition();
-    inline void buttonAbuttonBclaw();
-    inline void buttonR1buttonR2();
-    inline void buttonL1buttonL2();
-    inline void buttonUpbuttonDown();
-    inline void buttonRight();
+    void joystickPosition();
+    void buttonAbuttonBclaw();
+    void buttonR1buttonR2();
+    void buttonL1buttonL2();
+    void buttonUpbuttonDown();
+    void buttonRight();
 }
 #endif

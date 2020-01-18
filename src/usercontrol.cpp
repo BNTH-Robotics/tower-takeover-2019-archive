@@ -1,3 +1,5 @@
+#include "usercontrol.h"
+
 #include "controllerDef.h"
 #include "motorDef.h"
 #include "robotControlCheckExec.h"
@@ -25,8 +27,9 @@ void usercontrol(void)
      */
     while(true) 
     {
-        control::joystickPosition(); 
-        control::buttonAbuttonBclaw(); 
+      
+      control::joystickPosition(); 
+      control::buttonAbuttonBclaw(); 
         //If button up pressed, activate
         //if( Controller1.ButtonY.pressing() ) {
         //piston.set(true);
@@ -35,10 +38,10 @@ void usercontrol(void)
         //else {
         //piston.set(false);
         //}
-        control::buttonR1buttonR2();
-        control::buttonL1buttonL2();  
-        control::buttonUpbuttonDown();
-        control::buttonRight(); 
+      control::buttonR1buttonR2();
+      control::buttonL1buttonL2();
+      control::buttonUpbuttonDown();
+      control::buttonRight(); 
     }
 }
 
