@@ -1,6 +1,7 @@
 #include "robotControlCheckExec.h"
 
 #include "controllerDef.h"
+#include "speedDef.h"
 #include "motorDef.h"
 namespace control
 {
