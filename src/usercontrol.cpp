@@ -12,7 +12,17 @@ void usercontrol(void)
     LeftMotor.setVelocity(100, vex::velocityUnits::pct );
     RightMotor.setVelocity(100, vex::velocityUnits::pct );
     // Create an infinite loop so that the program can pull remote control values every iteration.
-    // This loop causes the program to run forever.
+    /*
+     * Polling input method for robot input
+     * Polling is where a program loops constantly checking
+     * if a certain input is pressed. If so, it will execute
+     * the associated command.
+     *
+     * This is the fastest form of input control albeit resource
+     * heavy compared to events. Since the robot only takes inputs, and responsiveness
+     * is key, then polling trumpts the event based input.
+     * The Vex API also has a preference to polling
+     */
     while(true) 
     {
         control::joystickPosition(); 
