@@ -6,33 +6,21 @@ void usercontrol(void)
 
     Controller1.Screen.clearScreen();
     Controller1.Screen.print("lets-e go!");
+    Controller1.Screen.print("yote yote float the goat");
 
     LeftMotor.setVelocity(100, vex::velocityUnits::pct );
     RightMotor.setVelocity(100, vex::velocityUnits::pct );
-    // 
-    //      
-    //     
-
-
-    //     // Create an infinite loop so that the program can pull remote control values every iteration.
-    //     // This loop causes the program to run forever.
+    // Create an infinite loop so that the program can pull remote control values every iteration.
+    // This loop causes the program to run forever.
     while(1) 
     {
-        //       // Drive Control
-        //       // Set the left and right motor to spin forward using the controller's Axis position as the velocity value.
+        // Drive Control
+        // Set the left and right motor to spin forward using the controller's Axis position as the velocity value.
         // Since we are using a single joystick, we will need to calculate the final volicity for each motor.
-        //     
         // (Axis3+Axis4)/2
         LeftMotor.spin(vex::directionType::fwd, (Controller1.Axis3.position() + Controller1.Axis4.position())/2, vex::velocityUnits::pct); 
         // (Axis3-Axis4)/2
         RightMotor.spin(vex::directionType::fwd, (Controller1.Axis3.position() - Controller1.Axis4.position())/2, vex::velocityUnits::pct);
-
-        // 
-        //   
-        // 
-        // 
-        // 
-        // 
         if(Controller1.ButtonA.pressing())
         {
             RightClaw.spin(vex::directionType::rev, ASpeedPCT, vex::velocityUnits::pct);
@@ -44,14 +32,11 @@ void usercontrol(void)
             RightClaw.spin(vex::directionType::fwd, ASpeedPCT, vex::velocityUnits::pct);
             LeftClaw.spin(vex::directionType::fwd, ASpeedPCT, vex::velocityUnits::pct);
         }
-        // 
         else
         {
             RightClaw.stop(vex::brakeType::brake);
             LeftClaw.stop(vex::brakeType::brake);
         }
-        //   
-
         //If button up pressed, activate
         //if( Controller1.ButtonY.pressing() ) {
         //piston.set(true);
@@ -60,11 +45,6 @@ void usercontrol(void)
         //else {
         //piston.set(false);
         //}
-
-        // 
-        // 
-
-
         if(Controller1.ButtonR2.pressing())
         {
             pusher.spin(vex::directionType::fwd, PSpeedPCT, vex::velocityUnits::pct);
