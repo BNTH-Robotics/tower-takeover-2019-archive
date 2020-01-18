@@ -5,7 +5,7 @@
 #include "motorDef.h"
 namespace control
 {
-    void joystickPosition()
+    inline void joystickPosition()
     {
         // Drive Control
         // Set the left and right motor to spin forward using the controller's Axis position as the velocity value.
@@ -16,7 +16,7 @@ namespace control
         RightMotor.spin(vex::directionType::fwd, (Controller1.Axis3.position() - Controller1.Axis4.position())/2, vex::velocityUnits::pct);
     }
 
-    void buttonAbuttonBclaw()
+    inline void buttonAbuttonBclaw()
     {
         if(Controller1.ButtonA.pressing())
         {
@@ -35,7 +35,7 @@ namespace control
         }
     }
 
-    void buttonR1buttonR2()
+    inline void buttonR1buttonR2()
     {
         if(Controller1.ButtonR2.pressing())
         {
@@ -55,7 +55,7 @@ namespace control
         } 
     }
 
-    void buttonL1buttonL2()
+    inline void buttonL1buttonL2()
     {
         if(Controller1.ButtonL1.pressing())
         {
@@ -74,7 +74,7 @@ namespace control
         }
     }
 
-    void buttonUpbuttonDown()
+    inline void buttonUpbuttonDown()
     {
         if(Controller1.ButtonUp.pressing())
         {
@@ -90,7 +90,7 @@ namespace control
         }
     }
 
-    void buttonRight()
+    inline void buttonRight()
     {
         if(Controller1.ButtonRight.pressing())
         {
