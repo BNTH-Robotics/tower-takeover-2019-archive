@@ -1,6 +1,10 @@
-#include "vex.h"
-#include "motorDef.h"
 #include "autonomous.h"
+
+#include "vex.h"
+
+#include "motorDef.h"
+#include "speedDef.h"
+
 void autonomous(void) 
 {
     Brain.Screen.clearScreen();
