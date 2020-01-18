@@ -21,7 +21,7 @@ SRC_H  = $(wildcard include/*.h)
 SRC_A  = makefile
 
 # project header file locations
-INC_F  = include
+INC_F  = /include
 
 # build targets
 all: $(BUILD)/$(PROJECT).bin
