@@ -13,9 +13,8 @@ void usercontrol(void)
     RightMotor.setVelocity(100, vex::velocityUnits::pct );
     // Create an infinite loop so that the program can pull remote control values every iteration.
     // This loop causes the program to run forever.
-    while(1) 
+    while(true) 
     {
-        
         control::joystickPosition(); 
         control::buttonAbuttonBclaw(); 
         //If button up pressed, activate
