@@ -12,4 +12,3 @@ Motor Port 8    ArmMotor      V5 Smart Motor    Arm motor           false
 Motor Port 3    ClawMotor     V5 Smart Motor    Claw motor          false
 ```
 
-_This is the real project_
